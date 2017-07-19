@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A11y Map</title>
-    <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.4/esri/css/main.css">
     <link rel="stylesheet" href="css/main.css">
     <script>
         var locationPath = location.pathname.replace(/\/[^\/]+$/, "");
@@ -17,14 +17,14 @@
             }]
         }
     </script>
-    <script src="https://js.arcgis.com/4.3"></script>
+    <script src="https://js.arcgis.com/4.4"></script>
 </head>
 
-<body>
-    <div role="main" id="viewDiv">
-        <div id="liveViewInfo" aria-live="polite" aria-atomic="true" role="navigation" aria-relevant="additions text" class="hidden live-info">
-            <div id="details" class="detail-info"></div>
+<body role="application">
+    <div id="viewDiv">
+        <div id="liveViewInfo" aria-live="polite" role="navigation" class="hidden live-info">
             <div id="dir" class="directions-info"></div>
+            <div id="details" class="detail-info"></div>
         </div>
     </div>
     <script>

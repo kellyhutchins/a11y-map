@@ -1,5 +1,8 @@
 # a11y-map
-A prototype app to test using Google's a11y map behavior with Esri's ArcGIS API for JavaScript version 4. 
+A prototype app to test adding keyboard interaction (similar to Google's a11y behavior)with Esri's ArcGIS API for JavaScript version 4. 
+
+
+[Demo App](https://kellyhutchins.github.io/a11y-map/index.html)
 
 ## Purpose 
 Use as a starting point to discusss ways to handle map accessiblity. 
@@ -8,7 +11,7 @@ Use as a starting point to discusss ways to handle map accessiblity.
 
 To see the a11y features tab into the map. Once you do so you'll see an extent graphic and feature list are added to the map to allow users to navigate the map content via the keyboard. At this point this is just a prototype app and feedback and comments are greatly appreciated. 
 
-You can access a live version of the app for testing here 
+You can access a live version of the app for testing here. The live test app supports a web map url parameter so you can append ?webmap=<some web map id> to the url to test with various web maps. The app requires that the map has a feature layer as the first layer and it uses the first string field it finds as the display field. 
 
 [Live App](https://kellyhutchins.github.io/a11y-map/index.html)
 
@@ -18,7 +21,7 @@ Another interesting app that shows navigating content in an accessible manner is
 
 ## Navigation tips
 
-Tab into the map to activate the extent search and display results. Once in the map you can use the arrow keys to move right, left, up or down in the map. Use - to zoom in and + to zoom out. 
+Tab into the map to activate the extent search and display results. Once in the map you can use the arrow keys to move right, left, up or down in the map. Use - to zoom in and + to zoom out. While the location dialog is active press i for more details about the area. Under the hood pressing i does a reverse geocode to find the address for the center of the query box. 
 
 ## Contributing
 
